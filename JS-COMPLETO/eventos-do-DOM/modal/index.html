@@ -20,7 +20,7 @@
       <li><a href="#animais">ANIMAIS</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contato">CONTATO</a></li>
-      <li><a href="http://portfolio-rkbno.netlify.app/" target="_blank">DEV → </a></li>
+      <li><a data-modal="abrir" href="login.html">LOGIN → </a></li>
     </ul>
   </nav>
 
@@ -100,7 +100,9 @@
       <section class="grid-section contato" data-anime="sroll" id="contato">
         <h1 class="titulo">Contato</h1>
         <div class="mapa">
-          <img src="src/img/mapa.png">
+          <a href="https://www.google.com/maps/place/R.+Em%C3%ADlio+Chagas+-+Vila+Independ%C3%AAncia,+Cariacica+-+ES,+29148-652/@-20.3336854,-40.4125789,16z/data=!3m1!4b1!4m6!3m5!1s0xb8395e8b8922b5:0x79d126c4d3feb378!8m2!3d-20.334228!4d-40.4073729!16s%2Fg%2F11c0r5d5yx?entry=ttu" target="_blank">
+            <img src="src/img/mapa.png">
+          </a>
         </div>
         <ul class="contato-lista">
           <li>contato@gmail.com</li>
@@ -115,13 +117,17 @@
       </footer>
     </div>
 
-    <section class="modal-container">
-     <input type="email" name="Email" id="Email" placeholder="Email">
+    <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="email" for="email" id="email"> <label for="senha">Senha</label>
+        <input type="password" for="password" id="password">
+        <button type="submit">Entrar</button>
+      </form>
 
-     <input type="password" name="password" id="password" placeholder="Senha">
-     
-     
-      <input type="button" value="Enviar" class="btn">
+    </div>
     </section>
       
   <script type="module" src="src/js/script.js"></script>
