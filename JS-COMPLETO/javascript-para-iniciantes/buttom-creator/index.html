@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Button Creactor</title>
+</head>
+<body>
+  <section class="button-creator">
+    <form id="controles">
+      <label for="texto">texto</label>
+      <input type="text" nome="texto" id="texto">
+      <label for="color">color</label>
+      <input type="color" nome="color" id="color">
+      <label for="backgroundColor">background-color</label>
+      <input type="color" nome="backgroundColor" id="backgroundColor">
+      <label for="height">height</label>
+      <input type="range" nome="height" id="height" min="0" max="200">
+      <label for="width">width</label>
+      <input type="range" nome="width" id="width" min="0" max="600">
+      <label for="border">border</label>
+      <input type="text" nome="border" id="border">
+      <label for="borderRadius">border-radius</label>
+      <input type="range" nome="borderRadius" id="borderRadius" min="0" max="20">
+      <select name="fontFamily" id="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="monospace">Monospace</option>
+      </select>
+      <label for="fontSize">font-size</label>
+      <input type="Number" name="fontSize" id="fontSize">
+    </form>
+    <section class="resultado">
+      <button class="btn">Clique</button>
+      <pre><code class="css">breno lindo</code></pre>
+    </section>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
