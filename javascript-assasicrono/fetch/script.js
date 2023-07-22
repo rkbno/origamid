@@ -1,11 +1,10 @@
- const cep = fetch('./sobre.html');
+ const imagem = fetch('https://viacep.com.br/ws/01001000/json/');
 
-const div = document.createElement('div');
 
- cep.then(r =>  r.text())
- .then(body => {
-  div.innerHTML = body
-  const titulo = div.querySelector('h1')
-  document.querySelector('h1').innerText = titulo.innerText
-  console.log(titulo)
- });
+ imagem.then(response => {
+  console.log(response.type);
+ if(response.status === 404){
+  console.log('pagina não existe')
+ }
+});
+
