@@ -4,13 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fetch</title>
-  
+  <style>
+    .container { 
+      max-width: 300px;
+      margin: 0 auto;
+      flex-direction: center;
+      justify-content: center;
+      justify-items: center;
+      display: block;
+    }
+    input {
+      display: block;
+      margin: 3px 0 10px 0;
+    }
+    .res {
+      margin: 10px;
+    }
+    
+  </style>
 </head>
 <body>
-  <img src="" alt="">
-  <div class="conteudo"></div>
-  
+  <div class="container">
 
-  <script src="script.js"></script>
+    <form>
+      <label for="cep">Cep</label>
+    <input type="Number" id="Number" name="Number" value="${CEP}">
+    <input id="btn" type="button" value="Verifique">
+  </form>
+  <div class="res"</div>
+
+  <div>
+    <h1>O VALOR DO BITCOIN NESSE MOMENTO:</h1>
+    <p></p>
+  </div>
+
+  <div class="piada"></div>
+  <input class="prox" type="button" value="Proximo">
+
+</div>
+  <script src="exercicio.js"></script>
 </body>
 </html>
