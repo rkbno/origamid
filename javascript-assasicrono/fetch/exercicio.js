@@ -38,9 +38,9 @@ function fetchBtc(){
   .then(btcJson => {
     pBtc.innerText = ('R$ ' + btcJson.BRL.buy).replace('.', ',');
   });
-  setInterval(fetchBtc, 100);
 };
 
+setInterval(fetchBtc, 100);
 
 fetchBtc();
 
@@ -49,7 +49,7 @@ fetchBtc();
 
 // Utilizando a API https://api.chucknorris.io/jokes/random
 // retorne uma piada randomica do chucknorris, toda vez que
-// clicar em próxima
+// clicar em próximaconst 
 const chuck = document.querySelector('.piada')
 const btnChuck = document.querySelector('.prox')
 
@@ -61,7 +61,7 @@ function chuckClick(){
 
 chuckClick();
 
-btnChuck.addEventListener('click', chuckClick)
+btnChuck.addEventListener('click', chuckClick);
 
 
 
