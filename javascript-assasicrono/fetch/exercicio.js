@@ -30,17 +30,17 @@ function buscaCep(cep){
 // Utilizando a API https://blockchain.info/ticker
 // retorne no DOM o valor de compra da bitcoin and reais.
 // atualize este valor a cada 30s
-const p = document.querySelector('p')
+const pBtc = document.querySelector('.btc')
 
 function fetchBtc(){
   fetch('https://blockchain.info/ticker')
   .then(response => response.json())
   .then(btcJson => {
-    p.innerText = ('R$ ' + btcJson.BRL.buy).replace('.', ',');
+    pBtc.innerText = ('R$ ' + btcJson.BRL.buy).replace('.', ',');
   });
+  setInterval(fetchBtc, 100);
 };
 
-setInterval(fetchBtc, 1000 * 30);
 
 fetchBtc();
 
