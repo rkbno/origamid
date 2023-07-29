@@ -40,7 +40,7 @@ function fetchBtc(){
   });
 };
 
-setInterval(fetchBtc, 500);
+setInterval(fetchBtc, 1000 * 30);
 
 fetchBtc();
 
